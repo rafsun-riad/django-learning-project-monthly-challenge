@@ -48,6 +48,13 @@ def monthly_challenges_by_number(request, month):
 def monthly_challenges(request, month):
     try:
         challenges_text = monthly_challenges_dict[month]
-        return render(request, "challenges/challenge.html")
+        return render(
+            request,
+            "challenges/challenge.html",
+            {
+                "text": challenges_text,
+                "month": month,
+            },
+        )
     except KeyError:
         return HttpResponseNotFound("This month is not supported")
