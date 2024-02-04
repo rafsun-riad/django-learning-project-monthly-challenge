@@ -17,7 +17,7 @@ monthly_challenges_dict = {
     "september": "Learn Django for at least 20 minutes everyday",
     "october": "Eat no meat for the entire month",
     "november": "Walk for at least 20 minutes everyday",
-    "december": "Learn Django for at least 20 minutes everyday",
+    "december": None,
 }
 
 
